@@ -2,10 +2,10 @@ import boto3
 
 def lambda_handler(event, context):
     # Initialize the EC2 client
-    ec2_client = boto3.client('ec2', region_name='ap-south-1') # Replace your Region name
+    ec2_client = boto3.client('ec2', region_name='ap-south-1') # your Region name
 
     # Specify the instance ID of the EC2 instance you want to start
-    instance_id = 'i-0fd1720a2634065c6' # Replace your Own Instance ID
+    instance_id = 'i-0fd1720a2634065c6' # your Instance ID
 
     # Start the EC2 instance
     try:
